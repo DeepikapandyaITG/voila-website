@@ -156,7 +156,6 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 5/10;
 }
 
 /* .vedio-main {
@@ -244,6 +243,7 @@ ul.mega-menu-hidden-list {
     width: 100%;
     gap: 10px;
     padding: 20px 0px;
+    justify-content: center;
 }
 
 .image-section-wraper {
@@ -376,14 +376,6 @@ svg.icon-hidden {
     border-radius: 5px;
 }
 
-/* .hidden-search-section-wraper {
-    padding: 30px;
-    padding-bottom: 0px;
-    display: none;
-    position: sticky;
-    z-index: 1;
-} */
-
 .details {
     background: rgb(67, 88, 112, .5);
     height: 100vh;
@@ -425,6 +417,13 @@ button {
     height: 100vh;
     padding: 20px;
     background-color: white;
+    right: -377;
+    transition: right 0.5s ease;
+    z-index: 1000;
+}
+
+.cart-head {
+    font-size: 25px;
 }
 
 .close-drawer-section {
@@ -628,4 +627,43 @@ svg.chat-icon {
     .vedio {
         aspect-ratio: 5/10;
     }
+
+    .btn-secandory-btn {
+        padding: 14.5px 17px;
+        letter-spacing: 0;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    img.VoilaPets-image {
+        max-width: 85px;
+        width: 100%;
+    }
+
+    .hidden-search-section-wraper {
+        padding: 14px;
+        padding-top: 40px;
+    }
+
+    form {
+        position: absolute;
+        left: 12px;
+        right: 50px;
+    }
+
+    svg.icon-hidden {
+        width: 15px;
+    }
+
+    .btn-secandory-btn {
+        padding: 14.5px 17px;
+        letter-spacing: 0;
+        font-size: 11px;
+    }
+
+    .cart-head {
+        font-size: 15px;
+    }
+
 }

@@ -30,7 +30,7 @@ closeDrawer.addEventListener("click", (event) => {
 hiddenNavIcone.addEventListener("click", (event) => {
     menuDrawer.classList.toggle("active")
     menuDrawerIcon.classList.toggle("active")
-    menuDrawerCloseIcon.classList.toggle("active")
+    menuDrawerCloseIcon.classList.toggle("active")  
 });
 
 // menuDrawerCloseIcon.addEventListener("click", (event) => {
